@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(range_sensor_layer)
+set_directory_properties(PROPERTIES COMPILE_OPTIONS "-Wall;-Werror;-std=c++11")
 
 find_package(catkin REQUIRED COMPONENTS
   angles

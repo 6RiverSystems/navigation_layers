@@ -2,10 +2,12 @@
 #include <boost/algorithm/string.hpp>
 #include <pluginlib/class_list_macros.h>
 #include <angles/angles.h>
+#include <cmath>
 
 PLUGINLIB_EXPORT_CLASS(range_sensor_layer::RangeSensorLayer, costmap_2d::Layer)
 
 using costmap_2d::NO_INFORMATION;
+using std::isinf;
 
 namespace range_sensor_layer
 {
